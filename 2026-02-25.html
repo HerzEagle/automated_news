@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鸽子窝新闻回顾 2026年02月25日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Times New Roman", "华文中宋", "STZhongsong", "宋体", Georgia, serif;
+            line-height: 1.9;
+            color: #1a1a1a;
+            background-color: #fdf9ee;
+            padding: 30px 20px;
+        }
+        #container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: #fffef7;
+            padding: 56px 64px;
+            border: 1px solid #e0d9c4;
+            border-radius: 2px;
+        }
+        /* ── 标题 ── */
+        h1 {
+            font-family: "Times New Roman", "楷体", "KaiTi", serif;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 28px;
+            color: #1a1a1a;
+            letter-spacing: 0.08em;
+        }
+        .title-rule {
+            border: none;
+            border-top: 1px solid #c8b89a;
+            margin: 0 0 40px 0;
+        }
+        /* ── TL;DR ── */
+        .tldr {
+            background-color: #f7f2e2;
+            border-left: 3px solid #8b1a1a;
+            padding: 16px 20px;
+            margin-bottom: 44px;
+            border-radius: 0 2px 2px 0;
+        }
+        .tldr-label {
+            font-family: "Times New Roman", serif;
+            font-size: 11px;
+            font-weight: bold;
+            color: #8b1a1a;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .tldr ul {
+            margin: 0 0 0 16px;
+            padding-left: 6px;
+        }
+        .tldr li {
+            font-family: "Times New Roman", "华文中宋", "STZhongsong", serif;
+            font-size: 14.5px;
+            color: #2a2a2a;
+            line-height: 1.85;
+            margin-bottom: 6px;
+        }
+        .tldr li::marker {
+            color: #8b1a1a;
+        }
+        /* ── 二级标题 ── */
+        h2 {
+            font-family: "Times New Roman", "楷体", "KaiTi", serif;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: #8b1a1a;
+            letter-spacing: 0.04em;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #d4c9a8;
+        }
+        /* ── 三级标题 ── */
+        h3 {
+            font-family: "Times New Roman", "楷体", "KaiTi", serif;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+        /* ── 正文 ── */
+        p {
+            font-family: "Times New Roman", "华文中宋", "STZhongsong", serif;
+            margin-bottom: 14px;
+            text-align: justify;
+            font-size: 15px;
+            color: #1a1a1a;
+        }
+        /* ── 来源注记 ── */
+        .source {
+            font-family: "Times New Roman", "仿宋", "FangSong", serif;
+            font-size: 12.5px;
+            font-style: italic;
+            color: #7a6a4a;
+            margin-top: 10px;
+            margin-bottom: 22px;
+            padding: 5px 12px;
+            border-left: 2px solid #d4c9a8;
+        }
+        .source a {
+            color: #7a6a4a;
+            text-decoration: none;
+            border-bottom: 1px dotted #b0a080;
+        }
+        .source a:hover {
+            color: #8b1a1a;
+            border-bottom-color: #8b1a1a;
+        }
+        /* ── 要点列表 ── */
+        ul {
+            margin: 16px 0 16px 20px;
+            padding-left: 8px;
+        }
+        li {
+            font-family: "Times New Roman", "华文中宋", "STZhongsong", serif;
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 1.75;
+            color: #1a1a1a;
+        }
+        li::marker {
+            color: #8b1a1a;
+        }
+        /* ── 要点分节标题 ── */
+        .bullet-section-header {
+            font-family: "Times New Roman", "仿宋", "FangSong", serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: italic;
+            color: #8b1a1a;
+            letter-spacing: 0.06em;
+            margin-top: 22px;
+            margin-bottom: 4px;
+            padding-bottom: 3px;
+            border-bottom: 1px dotted #d4c9a8;
+        }
+        /* ── 讨论分析块 ── */
+        .discussion-block {
+            margin-top: 20px;
+            margin-bottom: 4px;
+            padding: 18px 22px;
+            background-color: #f7f2e2;
+            border-radius: 2px;
+            border: 1px solid #e8e0ca;
+        }
+        .discussion-block p {
+            font-family: "Times New Roman", "楷体", "KaiTi", serif;
+            font-size: 15px;
+            color: #1a1a1a;
+            line-height: 1.9;
+        }
+        .discussion-source {
+            font-family: "Times New Roman", "仿宋", "FangSong", serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #8b1a1a;
+            font-style: italic;
+            margin-top: 12px;
+            text-align: right;
+            letter-spacing: 0.03em;
+        }
+        /* ── 讨论分析免责声明 ── */
+        .discussion-disclaimer {
+            font-family: "Times New Roman", "仿宋", "FangSong", serif;
+            font-size: 11.5px;
+            color: #b0a080;
+            font-style: italic;
+            margin-top: 14px;
+            padding: 8px 14px;
+            border-left: 2px solid #e0d9c4;
+            line-height: 1.7;
+        }
+        /* ── 分隔线 ── */
+        .section-rule {
+            border: none;
+            border-top: 1px solid #e0d9c4;
+            margin: 36px 0 0 0;
+        }
+        /* ── 页脚 ── */
+        .footer {
+            margin-top: 48px;
+            padding-top: 18px;
+            border-top: 1px solid #d4c9a8;
+        }
+        .footer-meta {
+            text-align: right;
+            font-family: "Times New Roman", "仿宋", "FangSong", serif;
+            font-size: 11px;
+            color: #bbb;
+            line-height: 1.8;
+        }
+        .footer-epigraph {
+            text-align: center;
+            font-family: "Times New Roman", Georgia, serif;
+            font-size: 10.5px;
+            font-style: italic;
+            color: #c8b89a;
+            margin-top: 18px;
+            letter-spacing: 0.02em;
+        }
+        /* ── 打印 ── */
+        @media print {
+            body {
+                background-color: #fdf9ee;
+                padding: 0;
+            }
+            #container {
+                border: none;
+                max-width: 100%;
+                padding: 40px 50px;
+            }
+            h2 { page-break-after: avoid; }
+            h3 { page-break-after: avoid; }
+            p  { page-break-inside: avoid; }
+            .discussion-block { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+
+    <h1>鸽子窝新闻回顾 2026年02月25日</h1>
+    <hr class="title-rule">
+
+    <!-- [THINKER-ONLY] 以下 TL;DR 由 Thinker 阶段写入，Analyst 不得修改或填充此块（含占位文字）-->
+    <!-- TL;DR：3–6 条，每条一句话，对应一则或一组相关的重要新闻（可适当纳入要点提示中相关信息），含具体人名/地名/数字，无修辞，无来源说明 -->
+    <div class="tldr">
+        <div class="tldr-label">TL;DR</div>
+        <ul>
+            <li>伊朗正与中国洽购CM-302超音速反舰导弹，同时确认周四在日内瓦与美方特使举行第三轮核谈判。</li>
+            <li>五角大楼以《国防生产法》相威胁，迫使Anthropic同意其AI模型用于军事行动并实质性软化安全底线。</li>
+            <li>AMD与Meta达成600亿美元定制AI芯片供应协议，中国计划将7纳米及以下先进制程芯片月产能提升至10万片。</li>
+            <li>德国总理默茨携大规模商务代表团抵京，大众、西门子等德企在华营收占比萎缩近五分之一。</li>
+            <li>15%全球替代关税正式生效，去年中美贸易数据中高达1120亿美元的缺口揭示了创纪录的关税逃避。</li>
+            <li>Citrini预测AI将导致白领岗位大面积消失的报告引发美股软件板块暴跌及科技IPO冻结。</li>
+        </ul>
+    </div>
+
+    <!-- ══════════════════════════════════════════ -->
+    <h2>一、重要新闻</h2>
+
+    <h3>1. 伊朗接近从中国购入超音速反舰导弹</h3>
+    <p>伊朗正与中国航天科工集团（CASIC）接洽购买CM-302超音速反舰巡航导弹。六名知情人士透露，谈判已持续至少两年，在去年6月以色列与伊朗之间的短暂战争后急剧加速。CM-302射程约290公里，以超音速低空贴海飞行，专为突破现代军舰的多层防空系统而设计。伊朗副国防部长Oraei去年夏天曾秘密访华以推进交易，这一此前未被报道的高层出访显示了双方的谈判已进入实质阶段，但目前尚未确定交付日期。前以色列情报分析官员Citrinowicz评估称，如果伊朗获得这类打击能力，将"彻底改变游戏规则"，因为在美国航母可搭载逾5000人和150架飞机的作战环境中，超音速反舰导弹是最难拦截的威胁之一。</p>
+    <p>除反舰导弹外，伊朗还在就中国制地对空导弹系统、便携式防空导弹（MANPADS）、反弹道武器乃至反卫星武器展开采购谈判。中国外交部回应称不知悉上述交易。如果这些交易达成，将违反联合国安理会对伊武器禁运（2006年首次实施，2015年随核协议暂停，去年9月重新恢复）。在美国海军"林肯"号和"福特"号航母打击群持续向伊朗周边集结、美伊核谈判即将进入第三轮的时刻，一名接近德黑兰的地区安全官员描述了当前伊朗决策层的判断："伊朗已成为美国与俄中之间的战场。"</p>
+    <div class="source">来源：<a href="https://www.reuters.com/world/china/iran-nears-deal-buy-supersonic-anti-ship-missiles-china-2026-02-24/">Reuters — Iran nears deal to buy CM-302 supersonic missiles from China</a></div>
+
+    <h3>2. 伊朗核谈确认周四举行第三轮，德黑兰展示灵活姿态</h3>
+    <p>伊朗外长阿拉格齐（Abbas Araghchi）2月25日公开表示"前所未有的协议触手可及，但前提是外交获得优先"，同时确认美伊核谈判第三轮将于周四在日内瓦举行，美方特使维特科夫（Steve Witkoff）和库什纳（Jared Kushner）将出席。伊朗副外长Takht-Ravanchi称"我们准备尽快达成协议，将以完全的诚实和善意进入谈判室"。这一表态较此前数周明显积极。此前各方已公开的伊朗分步让步框架——将部分高浓缩铀运往国外、稀释剩余、并加入地区浓缩联盟——仍是德黑兰的主要出价，交换条件是美国承认其"和平核浓缩权"并解除制裁。美方仍坚持伊朗不得在本国领土进行铀浓缩，这一根本分歧尚未弥合。</p>
+    <p>在谈判准备的同时，伊朗国内的学生抗议进入第四天持续升级。德黑兰科技大学校园内有便衣安全人员持武器出现，巴斯基民兵与学生发生肉搏冲突并被拍下视频。全国近80%的大学已改为线上授课，部分是为防止学生聚集。总检察长Mohammad Mohebi Azad要求对抗议者"采取果断法律行动"，暗示抗议受境外势力指导。华盛顿人权组织HRANA本周发布的《红色冬天》报告确认1月以来已有7070人在抗议中死亡（含姓名和身份详情），伊朗总统办公室则公布的数字为2986人。白宫发言人莱维特重申特朗普"首选外交，但若需要愿动用武力"。</p>
+    <div class="source">来源：<a href="https://www.reuters.com/world/middle-east/iran-is-ready-any-necessary-steps-reach-deal-with-us-deputy-foreign-minister-2026-02-24/">Reuters — Iran says deal within reach, Round 3 Thursday</a>&ensp;<a href="https://www.theguardian.com/world/2026/feb/24/iran-armed-police-flood-universities-to-crush-student-protests">Guardian — Iran Day 4 student protests, Basij clashes</a>&ensp;<a href="https://www.lemonde.fr/en/international/article/2026/02/24/iran-says-an-unprecedented-deal-is-within-reach-ahead-of-us-talks_6750844_4.html">Le Monde — Iran talks update</a></div>
+
+    <h3>3. 五角大楼向Anthropic下达最后通牒，AI安全底线同步后退</h3>
+    <p>美国国防部长赫格塞斯（Pete Hegseth）本周亲自向人工智能公司Anthropic发出限期要求：周五下午5时01分之前，Anthropic必须同意其AI模型Claude用于所有合法军事行动，否则五角大楼将援引冷战时期的《国防生产法》（Defense Production Act）强制征用其技术，并将Anthropic标记为供应链风险实体。此前Claude曾在今年1月美军抓捕委内瑞拉前领导人马杜罗的行动中被实际使用，Anthropic在那之后拒绝放开限制。Anthropic目前与国防部有价值2亿美元的合同，是唯一获准在军方机密网络运行的大型语言模型。公司表示不会在无人监督的致命任务和国内大规模监控两个领域让步，并暗示可能就最后通牒采取法律行动。</p>
+    <p>同日，Anthropic在自身博客上宣布修改核心安全政策：此前若模型被认定具有特定风险，公司会暂停开发；此后若竞争对手已发布同等或更强的模型，Anthropic将不再因安全原因中止自身研发。这一调整撕开了Anthropic作为AI安全标杆的定位，多名安全研究员近期离开了公司，包括今年2月初辞职并转去"探索诗歌学位"的Mrinank Sharma，他表示离职部分出于对公司政策走向的失望。与此同时，Anthropic公开指控三家中国AI公司利用约2.4万个虚假账户、生成超过1600万次对话来"蒸馏"Claude的能力，其中MiniMax约1300万次、月之暗面约340万次、DeepSeek约15万次。月之暗面CEO杨植麟将旗下模型Kimi偶尔自认为"Claude"一事归咎于互联网上的训练数据。</p>
+    <div class="source">来源：<a href="https://www.ft.com/content/0c6b63b6-2524-4ba7-9f7a-e7183b29386f">FT — Hegseth threatens Anthropic with Pentagon ultimatum</a>&ensp;<a href="https://www.wsj.com/tech/ai/anthropic-dials-back-ai-safety-commitments-38257540">WSJ — Anthropic dials back AI safety commitments</a>&ensp;<a href="https://www.scmp.com/tech/tech-war/article/3344499/anthropics-distilling-charges-against-chinese-firms-expose-ai-training-grey-area">SCMP — Anthropic accuses Chinese firms of distillation</a></div>
+
+    <h3>4. AMD与Meta签署五年600亿美元AI芯片供应协议</h3>
+    <p>AMD与Meta达成一份为期五年、总值高达600亿美元的AI芯片供应协议，是AMD历史上规模最大的单笔客户合同。协议的核心是向Meta供应6吉瓦计算能力的定制AI芯片，首批1吉瓦规模的MI450旗舰芯片将于今年下半年交付，专门针对大规模AI推理任务进行优化，在该领域与英伟达即将推出的Vera Rubin芯片直接竞争。作为协议的一部分，Meta可收购AMD最多10%的股份；AMD将发行1.6亿股认股权证，行权价为1美分，当AMD股价逐步达到最高600美元时分批归属。Meta的基础设施负责人Janardhan表示，目标是"让所有芯片制造商最终都在桌前有一席之地"。</p>
+    <p>这份合同延续了大型科技公司在AI芯片投资上"循环交易"的格局。Meta同时是英伟达和AMD的重要客户，此前OpenAI也已宣布投资AMD竞争对手，交叉持股使AI芯片行业的供需关系日趋复杂。分析师Britzman指出，AMD为争取这笔合同"不得不让出10%的股权，暗示它在有机需求方面可能面临困难"。大型科技公司今年在AI领域的资本支出预计至少达到6300亿美元。消息公布后，AMD股价上涨超过6%，英伟达和博通则分别下跌约1%和2%。上述协议还涵盖两代基于AMD架构的定制CPU，为Meta数据中心提供推理之外的通用算力支撑。</p>
+    <div class="source">来源：<a href="https://www.reuters.com/business/amd-clinches-second-mega-chip-supply-deal-this-time-with-meta-2026-02-24/">Reuters — AMD, Meta sign $60 billion AI chip deal</a></div>
+
+    <h3>5. 中国先进芯片扩产计划曝光，月产目标10万片</h3>
+    <p>中国正计划在未来一到两年内将7纳米及以下制程的先进芯片月产能从目前不足2万片晶圆提升至10万片，更长期目标是到2030年再增加50万片产能。中芯国际（SMIC）是这一扩产的核心，目前已可量产"类7纳米"芯片，正在开发被业界称为N+3节点的"类5纳米"工艺。SMIC联合首席执行官梁孟松负责指导北京工厂复制上海产线的制程方案。华虹半导体也加入了先进芯片制造行列，还有数家与华为关联的新设代工企业正在建设产线。华为的麒麟9030和最新昇腾AI芯片均基于SMIC的N+3节点制造，华为在2024年中国AI算力芯片市场中占据约23%份额，仅次于英伟达的66%。</p>
+    <p>与此并行，美国商务部出口执法助理部长Peters在众议院听证会上证实，尽管特朗普政府上月已正式批准英伟达H200芯片对华销售，"据我了解，目前为止一颗也没有"交付给中国客户。他同时承认"芯片走私正在发生"，并将其列为"最优先的执法重点之一"。这一局面促使全球PC厂商寻求替代方案：惠普、戴尔、宏碁和华硕正首次考虑从中国存储芯片制造商长鑫存储（CXMT）采购DRAM，用于非美国市场的产品线，原因是三星、SK海力士和美光将大量DRAM产能优先供给英伟达和谷歌等AI大客户，导致消费电子市场出现供应紧张。</p>
+    <div class="source">来源：<a href="https://asia.nikkei.com/business/technology/tech-asia/china-aims-for-5-fold-increase-in-advanced-chip-output-to-meet-ai-demand">Nikkei Asia — China aims 5x increase in advanced chip output</a>&ensp;<a href="https://www.reuters.com/world/asia-pacific/china-has-not-yet-received-any-nvidia-h200-chips-us-official-said-2026-02-24/">Reuters — China hasn't received Nvidia H200 chips</a>&ensp;<a href="https://asia.nikkei.com/spotlight/supply-chain/hp-dell-acer-and-asus-mull-using-chinese-memory-chips-amid-supply-crunch">Nikkei Asia — HP, Dell consider CXMT China memory</a></div>
+
+    <h3>6. 默茨携最大商务代表团抵京，德企对华收入系统性萎缩</h3>
+    <p>德国总理默茨（Friedrich Merz）2月25日上午抵达北京，将在两天内会见习近平和李强，随行约30名商界领袖组成了默克尔时代以来最大规模的访华商务代表团。他此前只到过中国一次，那是20年前。为准备此行，默茨在2月17日召集中国问题专家做了一场闭门通报会。他还将赴杭州参观人形机器人企业。</p>
+    <p>默茨的访华背景是中德经济关系正在经历结构性转变。一项针对27家德国上市公司的分析显示，中国在其合计营收中的占比在四年内从18.6%降至14.9%，降幅接近五分之一。下滑最为剧烈的是汽车行业：大众中国销售占比从42%跌至30%，阿迪达斯从23.6%跌至14.8%，西门子从13.2%跌至9.1%，彪马五年内几乎腰斩至6.8%。半导体设备厂商Aixtron的情况最为极端，从65%暴跌至29.6%，起因是北京要求至少一半半导体设备来自国产供应商。只有英飞凌例外，中国营收占比逆势升至38%。安永合伙人Titus von dem Bongart判断，"中国年双位数增长的繁荣时代已经结束，对大多数行业也不会再回来"。2019年以来德国已失去26.6万个工业岗位，其中汽车行业占11.1万个。前欧盟商会驻华主席Wuttke将当前态势形容为"残酷的戒断反应"，并指出中国在嵌入式软件方面至少领先德国6年。</p>
+    <div class="source">来源：<a href="https://www.handelsblatt.com/unternehmen/globalisierung-umsaetze-deutscher-konzerne-in-china-erodieren/100199569.html">Handelsblatt — German industry China revenue decline</a>&ensp;<a href="https://www.lemonde.fr/en/economy/article/2026/02/25/germany-is-being-forced-to-confront-its-growing-competition-with-china_6750849_19.html">Le Monde — Germany confronting competition with China</a>&ensp;<a href="https://www.zaobao.com.sg/news/china/story20260225-8635032">联合早报 — 默茨抵京</a></div>
+
+    <h3>7. 中国对40家日本实体实施出口管制并首设观察名单</h3>
+    <p>中国商务部宣布对40家日本企业和机构实施两用物项出口管制，即日生效。其中20家被列入"出口管制名单"，包括三菱造船、川崎重工航空系统分公司和防卫大学等，所有中国产两用物资对它们的出口被全面禁止。另外20家被列入新设的"观察名单"，包括斯巴鲁、TDK、ENEOS石油、伊藤忠商事、住友商事和三井物产等，出口这些实体的两用物项须提交风险评估报告和书面承诺。"观察名单"制度是中国出口管制体系的一项首创，介于全面禁运和正常贸易之间，为未来升级或降级留出灵活空间。</p>
+    <p>中方将此举定性为"遏制日本再军事化和核野心"。日本内阁官房副长官佐藤圭回应称该决定"完全不可接受"。日本市场当日出现明显波动：富士通下跌近9%至七个月低位，IHI跌约6%，川崎重工跌4%，三菱重工跌3%。律师中川弘重警告称，如果日本采取反制，"中国可以预见地会实施更多管制措施，进一步冷却中日关系"。此次管制的直接背景是去年11月首相高市早苗公开表示大陆攻台将触发日本"存亡危机事态"之后中日关系的持续恶化。部分被列入名单的企业表示完全措手不及，因为中国春节长假刚刚结束便收到通知。</p>
+    <div class="source">来源：<a href="https://asia.nikkei.com/politics/international-relations/japan-china-tensions/china-restricts-exports-to-japanese-companies-to-curb-remilitarization">SCMP — China restricts exports to 40 Japanese entities</a>&ensp;<a href="https://asia.nikkei.com/spotlight/comment/japan-at-risk-of-political-economic-deep-freeze-with-china">Nikkei Asia — China export controls Japan watchlist</a></div>
+
+    <h3>8. 中美贸易数据现1120亿美元缺口，关税逃避创纪录</h3>
+    <p>一项调查发现，中国海关报告的对美出口与美国海关记录的到货之间出现了创纪录的1120亿美元差额，意味着去年约四分之一从中国发往美国的货物可能逃避了关税缴纳。这一缺口远超特朗普第一任期的异常水平，当时美联储的研究表明近三分之二的类似差额源于关税逃避。欺诈手法包括：通过DDP（完税交货）机制故意低报货值或错误归类；利用空壳公司或无实际存在的非居民实体充当"影子进口商"；以及低至每公斤0.70美元（含税）的全包运费招揽客户。割草机制造商American Lawn Mower的总裁Michael Kersey评价说，"关税作弊对我们的伤害比关税本身大得多"。</p>
+    <p>在关税征收的合法性同样面临挑战之际，最高法院上周裁定特朗普以《国际紧急经济权力法》（IEEPA）为依据的全球关税违宪之后，围绕约1750亿美元已缴关税的退税权交易市场正在迅速成型。投资者以面值40%至50%的价格从进口商手中收购退税权益，较裁决前的16%至28%大幅上升。物流巨头FedEx已正式起诉美国海关与边境保护局（CBP）要求全额退税；在日本，至少10家企业（含川崎重工、丰田通商、横滨橡胶）也在裁决前就已提起类似诉讼。全球物流公司K+N正准备协助客户批量索赔。执法方面，国土安全部已将贸易犯罪调查资源大量转向移民执法，CBP官员警告相关调查"可能需要数年"。</p>
+    <div class="source">来源：<a href="https://www.bloomberg.com/news/features/2026-02-24/china-s-112-billion-cargo-gap-shows-record-us-tariff-evasion">Bloomberg — China $112B cargo gap reveals record tariff evasion</a>&ensp;<a href="https://www.reuters.com/legal/government/prices-investors-will-pay-tariff-refund-claims-surge-after-supreme-court-2026-02-24/">Reuters — Tariff refund claims surge as investors buy rights</a>&ensp;<a href="https://www.handelsblatt.com/unternehmen/dienstleister/usa-logistiker-draengen-auf-rueckerstattung-von-us-zoellen/100202645.html">Handelsblatt — FedEx klagt</a>&ensp;<a href="https://asia.nikkei.com/economy/trade-war/trump-tariffs/fedex-japan-firms-join-mounting-suits-for-refunds-of-trump-tariffs">Nikkei Asia — Japanese firms file tariff suits</a></div>
+
+    <h3>9. 15%全球替代关税正式落地，各方进入新不确定期</h3>
+    <p>历经最高法院否决IEEPA关税、特朗普援引《1974年贸易法》第122条将替代关税提升至上限15%的一周政策动荡，这一15%全球统一关税于2月25日进入实施首个完整交易日。法律界对§122路径的合宪性仍存争议，但行政当局已借此换得不逾150天的政策窗口，且不再面临此前被法院即刻叫停的急迫风险。</p>
+    <p>后续反应在多线展开。中国商务部确认将举行第六轮高级别贸易磋商，为特朗普预定的国事访问铺路，同时表示正"全面评估"是否调整此前的反制措施。分析人士认为最高法院裁决客观上削弱了特朗普在3月底访华时的谈判筹码，中方可能不再急于承诺大规模采购美国农产品和能源。在欧洲，多个贸易伙伴对局势的不确定性表示严重关切。德国工业界担忧，尽管15%以下的新税率暂时与此前的Turnberry贸易框架保持一致，法律基础的脆弱性使任何长期商业规划难以成立。在贸易法律从紧急权力向传统通道回归的转换中，这一10%税率能维持多久取决于国会的态度和可能到来的下一轮司法挑战。</p>
+    <div class="source">来源：<a href="https://www.bloomberg.com/news/articles/2026-02-24/trump-s-10-global-levy-takes-effect-as-us-rebuilds-tariff-wall">Bloomberg — 15 pct global levy takes effect</a>&ensp;<a href="https://www.scmp.com/economy/china-economy/article/3344491/china-weighs-response-trump-imposes-new-global-tariff-after-court-ruling">SCMP — China weighs response to new tariffs</a>&ensp;<a href="https://asia.nikkei.com/economy/trade-war/trump-tariffs/trump-s-tariff-setback-complicates-us-president-s-china-trip">Nikkei Asia — Trump tariff setback complicates China trip</a>&ensp;<a href="https://www.handelsblatt.com/unternehmen/industrie/handelskonflikt-deutsche-industrie-fuerchtet-erneuten-rueckschlag-durch-zollchaos/100202664.html">Handelsblatt — German industry fears Zollchaos</a></div>
+
+    <h3>10. Citrini报告触发软件板块暴跌与科技IPO冻结</h3>
+    <p>33岁的对冲基金分析师James van Geelen于2月23日在其投资研究平台Citrini Research的Substack上发布了一篇7000余字的免费文章，标题为《2028全球智能危机》，假设大规模AI自动化将在未来两年内导致白领岗位大面积消失、失业率超过10%、通缩级联爆发、股价崩溃。这位曾在2022年底成功做空硅谷银行而成名的分析师目前拥有超过11.9万付费与免费订阅用户，Substack排名居首。文章周一即对美股形成冲击：标普500指数在日内由涨转跌，收跌超过1%，主要软件ETF跌幅超过4%，跌至去年4月"解放日"关税冲击以来的最低水平。报告中点名的ServiceNow、DoorDash和美国运通均下跌。</p>
+    <p>这一抛售暴露了市场对AI颠覆传统企业软件行业的高度焦虑。ServiceNow的市值在过去数月已蒸发超过1000亿美元，此后又再跌22%。在IPO市场上，移动广告平台Liftoff和经纪商Clear Street在卖压中撤回了上市申请。2025年完成上市的科技企业中，四分之三当前股价低于发行价，平均跌幅18%；图形协作工具Figma从上市首日上涨250%跌至低于发行价。尽管大盘次日反弹0.8%，市场的关注重心正在从AI受益方转向AI受害方。"HALO股"（重资产、低自动化淘汰风险的企业）正成为新的投资逻辑。白宫经济学家将Citrini的报告斥为"科幻小说"。van Geelen则表示："如果我以为股票会因此波动，我就不会免费发布了。"</p>
+    <div class="source">来源：<a href="https://www.bloomberg.com/news/articles/2026-02-24/citrini-founder-shocked-his-ai-prediction-spurred-stocks-selloff">Bloomberg — Citrini 2028 Global Intelligence Crisis report sparks selloff</a>&ensp;<a href="https://www.ft.com/content/8867bff7-8632-40b7-8fde-7c95b3e624f9">FT — AI upheaval forces software adapt or die</a>&ensp;<a href="https://www.wsj.com/finance/stocks/ai-induced-tech-selloff-spoils-the-ipo-parade-28c54d5e">WSJ — AI tech selloff spoils IPO parade</a>&ensp;<a href="https://www.theguardian.com/technology/2026/feb/24/feedback-loop-no-brake-how-ai-doomsday-report-rattled-markets">Guardian — Citrini report market impact</a></div>
+
+    <!-- ══════════════════════════════════════════ -->
+    <hr class="section-rule">
+    <h2>二、要点提示</h2>
+
+    <h4 class="bullet-section-header">地缘政治/外交</h4>
+    <ul>
+        <li>俄乌战争进入第五年，"志愿联盟"多国领导人在基辅发表声明，匈牙利前一天否决了900亿欧元对乌贷款和新一轮制裁。（Reuters）</li>
+        <li>IISS报告：俄罗斯2025年国防开支1860亿美元（GDP的7.3%），自2021年翻倍，但月征兵量已不敷损失补充。（Guardian）</li>
+        <li>英国制裁石油管道巨头Transneft等近300个俄罗斯目标，为战争以来最大单次制裁包。（Reuters）</li>
+        <li>法国禁止美国大使Charles Kushner接触任何政府官员，因其两次拒绝出席外交部召见。（FT / Reuters）</li>
+        <li>里昂极右翼活动人士遇袭案查明多名嫌疑人与"不屈法国"存在人事关联，马克龙召开紧急安全会议。（Economist / FT）</li>
+        <li>黎巴嫩外长在日内瓦人权理事会确认以色列已间接警告将打击贝鲁特机场等民用设施。（AlMonitor）</li>
+        <li>美国首次在约旦河西岸定居点Efrat开设护照和公民服务窗口。（Reuters）</li>
+        <li>爱泼斯坦案法国关联深化：Jack Lang辞去阿拉伯世界研究所主席，议会要求成立调查委员会。（Jacobin）</li>
+        <li>墨西哥总统Sheinbaum考虑起诉马斯克，因后者在X平台上指控其"听命于贩毒集团"。（Reuters）</li>
+        <li>埃塞俄比亚军队在提格雷边境集结并1月发动无人机袭击，非盟呼吁遏制局势。（Le Monde）</li>
+    </ul>
+
+    <h4 class="bullet-section-header">贸易/经济</h4>
+    <ul>
+        <li>美商务部对印度（125.87%）、印尼（104.38%）和老挝太阳能组件征收反补贴初裁税率，涉及约45亿美元进口额。（Nikkei）</li>
+        <li>诺和诺德将Wegovy美国定价砍半至每月675美元，Ozempic同步降价35%。（Reuters）</li>
+        <li>Stripe（估值1590亿美元）正初步探讨收购PayPal（市值约400亿美元）。（Bloomberg）</li>
+        <li>IRS以"实际利润"标准挑战Meta 2010年离岸知识产权估值，索赔160亿美元税款及罚款。（Quartz）</li>
+        <li>KOSPI指数首次突破6000点，年内累计上涨43%，三星和SK海力士领涨。（Reuters）</li>
+        <li>台积电股价首破2000新台币，台湾加权指数同日首次站上35000点。（联合早报）</li>
+        <li>现代集团宣布在韩国新万金地区投资机器人、数据中心和氢能项目，股价涨10.5%，起亚涨15%。（Reuters）</li>
+        <li>EU首个直投初创企业基金Scaleup Europe规模超50亿欧元，安联和Schwarz集团参与。（Handelsblatt）</li>
+        <li>匈牙利经济增长降至0.3%，为中东欧最差，德企对匈投资意愿减半至19%。（Handelsblatt）</li>
+        <li>高市早苗上周告诉日本央行总裁植田和男她对进一步加息持保留态度，日元当日跌破156。（Reuters / 每日新闻）</li>
+    </ul>
+
+    <h4 class="bullet-section-header">中国经济与产业</h4>
+    <ul>
+        <li>北大团队在Science Advances发表最小铁电晶体管（FeFET）研究成果，推进神经形态计算。（SCMP）</li>
+        <li>Unity考虑出售中国业务（估值逾10亿美元），股价年内下跌六成。（联合早报 / Bloomberg）</li>
+        <li>蓝箭航天宣布朱雀三号运载火箭将于2026年第二季度再次尝试一子级海上回收。（联合早报）</li>
+    </ul>
+
+    <h4 class="bullet-section-header">美国政治</h4>
+    <ul>
+        <li>特朗普将在今晚国情咨文演讲中论述伊朗局势、关税政策和AI数据中心社区电费问题。（Reuters / WSJ）</li>
+        <li>参议院民主党第二次阻止DHS拨款（50比45），政府停摆谈判"几乎完全停滞"。（Politico / Economist）</li>
+        <li>三名联邦执法官员（含DHS内部人员）确认部长诺姆关于非法移民"食人"的故事系编造。（The Intercept）</li>
+        <li>财政部审议行政令要求银行收集客户公民身份信息，银行业协会正在游说反对，参议员Cotton拟推配套立法。（WSJ）</li>
+        <li>司法部长邦迪首次在国会承认NSPM-7框架下存在秘密国内恐怖组织名单，明确"Antifa在名单上"。（The Intercept）</li>
+        <li>DC巡回法院全院审理CFPB关停案上诉，多名法官对政府"法院无权阻止机构裁员"的论点持怀疑态度。（Reuters）</li>
+        <li>DC空难后推动的航空安全法案（Rotor Act）在众院264比133未获三分之二多数通过。（WSJ）</li>
+    </ul>
+
+    <h4 class="bullet-section-header">技术与社会</h4>
+    <ul>
+        <li>Amazon、Google和Meta开始将员工AI工具使用频率纳入绩效考核，42%科技员工称主管期望其日常使用AI。（WSJ）</li>
+        <li>澳大利亚物流软件公司WiseTech裁员2000人，占员工总数29%，CEO称"手写代码的时代已经结束"。（Reuters）</li>
+        <li>2025年美国太阳能发电量首次超过水电，同比增长35%，但需求增量仍部分由煤炭补缺。（Ars Technica）</li>
+        <li>前L3Harris高管因向俄方中间人出售8件网络武器获利130万美元，被判处87个月联邦监禁。（Reuters）</li>
+        <li>美国财长贝森特主动发起今年1月的日元汇率协调检查，并非由日方请求，美方曾一度考虑联合干预。（Nikkei）</li>
+    </ul>
+
+    <!-- ══════════════════════════════════════════ -->
+    <hr class="section-rule">
+    <h2>三、讨论分析</h2>
+
+    <!-- [THINKER-ONLY] 以下讨论分析由 Thinker 阶段写入，Analyst 不得修改或填充此块（含占位文字）-->
+    <!-- 每块对应一个分析视角；.discussion-source 署虚构评论员身份 -->
+    <div class="discussion-block">
+        <p>Anthropic的妥协和Citrini报告引发的暴跌，共同揭示了当前AI叙事的双重脆弱性。所谓"AI安全"的道德光环在五角大楼的《国防生产法》面前显得不堪一击。当Anthropic将"竞争对手发布同等模型"作为放弃安全暂停的理由时，它实际上承认了商业竞争和国家安全逻辑已经彻底接管了技术发展的方向盘。与此同时，Citrini报告之所以能用一篇免费文章蒸发ServiceNow上千亿美元市值，并非因为其预测有多么严谨，而是因为它精准击中了市场对"AI颠覆一切"这一宏大叙事的深层焦虑。资本市场在为AMD和Meta的600亿美元硬件订单欢呼的同时，却对软件应用层的商业模式极度缺乏信心。这种底层算力投资的狂热与应用层预期的恐慌形成了鲜明对比。技术能力的实际进展正在被线性外推为社会结构的瞬间崩塌，而这种恐慌本身正在成为比AI更真实的破坏力量。</p>
+        <div class="discussion-source">— Sam Automan</div>
+    </div>
+
+    <div class="discussion-block">
+        <p>德黑兰正在上演一出经典的边缘政策教学局。伊朗一边向华盛顿抛出"前所未有的协议触手可及"的橄榄枝，甚至表态愿意交出部分高浓缩铀，另一边却在暗中向北京求购CM-302超音速反舰导弹。这种看似矛盾的举动，恰恰是弱势主权国家在面对超级大国军事压境时的生存理性。他们试图用谈判拖延时间，同时用不对称武器增加对方的动武成本。美国双航母编队的威慑力，在面对可能突破防空网的超音速反舰导弹时，其政治效用会被大幅削弱。同样，中国对日本40家实体实施出口管制并首创"观察名单"，也是一种精准的权力运用。北京没有选择全面禁运，而是通过"观察名单"这种悬在头顶的达摩克利斯之剑，迫使日本企业在内部形成对高市早苗政府的政治压力。在这些博弈中，没有纯粹的意识形态对立，只有基于实力对比的筹码交换和底线试探。</p>
+        <div class="discussion-source">— 朝阳区周师傅</div>
+    </div>
+
+    <div class="discussion-block">
+        <p>华盛顿的政治家们似乎总是天真地以为，只要在椭圆形办公室签署了一纸关税法令，全球贸易流向就会如臂使指般改变。然而，1120亿美元的中美贸易数据缺口无情地展示了商业网络在面对"政治决断"时的规避能力。当关税政策从常规的经济调节工具异化为总统的个人外交武器时，它必然催生出一个庞大的灰色产业。进口商通过完税交货机制和"幻影公司"逃避关税，而负责执法的海关与边境保护局却发现自己的资源被国土安全部抽调去执行更具政治表演价值的移民驱逐任务。最高法院对紧急经济权力法关税的否决，表面上是宪政权力的制衡，在行政执行层面却引发了一场灾难性的退税确权混乱。新出台的15%替代关税虽然暂时稳住了政治颜面，但其脆弱的法律基础和150天的期限，只会让跨国企业和物流巨头们更加确信，与其耗费巨资调整供应链，不如投资于更好的律师团队和更隐蔽的清关路线。</p>
+        <div class="discussion-source">— Sir Hamfry Applebee</div>
+    </div>
+    <p class="discussion-disclaimer">本栏目内容由 AI 生成，仅供参考和娱乐。理论应用和分析结论不代表任何机构立场，不保证学术准确性或内容可靠性。</p>
+
+    <!-- ══════════════════════════════════════════ -->
+    <div class="footer">
+        <p class="footer-meta">
+            信息搜集：Claude Opus 4.6&ensp;·&ensp;新闻整理：Claude Opus 4.6&ensp;·&ensp;讨论分析：Gemini 3.1 Pro<br>
+            特别鸣谢：magnolia1234
+        </p>
+        <p class="footer-epigraph">
+            Kein Mensch kann sie wissen, kein Jäger sie schießen;<br>
+            es bleibet dabei: <em>Die Gedanken sind frei!</em>
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
